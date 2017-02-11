@@ -1,0 +1,302 @@
+<ion-view title="Match Scouting" id="page10">
+  <ion-content padding="true" class="has-header">
+    <form id="matchScouting-form12" class="list">
+        <label class="item item-input" id="matchScouting-input34">
+          <span class="input-label">Match Number</span>
+          <input type="number" placeholder="">
+        </label>
+        <label class="item item-select" id="matchScouting-select168">
+          <span class="input-label">Scouters Name</span>
+          <select>
+            <option>None</option>
+            <option>Jared</option>
+            <option>Nathan</option>
+            <option>Hassied</option>
+            <option>Chris</option>
+            <option>David</option>
+          </select>
+        </label>
+        <div id="matchScouting-button-bar1" class="button-bar">
+          <button id="matchScouting-button12" class="button button-positive  button-block" ng-click="buttonClick('autonomous')">Autonomous</button>
+          <button id="matchScouting-button13" class="button button-positive  button-block" ng-click="buttonClick('teleop')">Teleop</button>
+          <button id="matchScouting-button14" class="button button-positive  button-block" ng-click="buttonClick('postgame')">Post-game</button>
+          <button id="matchScouting-button15" class="button button-positive  button-block" ng-click="buttonClick('human')">Human Player</button>
+        </div>
+      </form>
+      
+      <form id="matchScouting-form14" class="list" ng-show="showIfButtonClicked('autonomous')">
+      <h1 id="matchScouting-heading15" style="color:#000000;text-align:center;">Autonomous</h1>
+      <label class="item item-input" id="matchScouting-input23">
+        <span class="input-label">How many gears did they get</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-input" id="matchScouting-input24">
+        <span class="input-label">How many attempts did they do on the high goal? </span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-input" id="matchScouting-input25">
+        <span class="input-label">How many times did they score in the high goal?</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-input" id="matchScouting-input26">
+        <span class="input-label">How many attempts did they do on the low goal? </span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-input" id="matchScouting-input27">
+        <span class="input-label">How many times did they score in the low goal?</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-select" id="matchScouting-select65">
+        <span class="input-label">Did they get a tech foul?</span>
+        <select>
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select66">
+        <span class="input-label">Did they get a yellow card?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select67">
+        <span class="input-label">Did they get a red card</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select68">
+        <span class="input-label">Did they play defene?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+    </form>
+    
+    
+    <form id="matchScouting-form9" class="list" ng-show="showIfButtonClicked('teleop')">
+      <h1 id="matchScouting-heading14" style="color:#000000;text-align:center;">Teleop</h1>
+      <label class="item item-select" id="matchScouting-select103">
+        <span class="input-label">Did they get a gear?</span>
+        <select>
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select104">
+        <span class="input-label">Did they cross the line?</span>
+        <select>
+          <option>yes</option>
+          <option>no</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select105">
+        <span class="input-label">Did they score in the high boiler?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select106">
+        <span class="input-label">Did the score in the low boiler</span>
+        <select>
+          <option>yes</option>
+          <option>no</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select107">
+        <span class="input-label">Did they activat a hopper</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select148">
+        <span class="input-label">Do they have an autonomus</span>
+        <select>
+          <option>yes</option>
+          <option>no</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select149">
+        <span class="input-label">What did they start off with</span>
+        <select>
+          <option>gear</option>
+          <option>fuel</option>
+          <option>both</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select150">
+        <span class="input-label">What was thier starting position</span>
+        <select>
+          <option>Left position</option>
+          <option>Middle position</option>
+          <option>Right position</option>
+        </select>
+      </label>
+      <label class="item item-input" id="matchScouting-input10">
+        <span class="input-label">How many penalties did they get in Autonomous?</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-input" id="matchScouting-input30">
+        <span class="input-label">How many tech fouls did they git in Autonomus?</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-select" id="matchScouting-select151">
+        <span class="input-label">Did they git a yellow card?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select152">
+        <span class="input-label">Did they git a red card</span>
+        <select>
+          <option>yes</option>
+          <option>no</option>
+        </select>
+      </label>
+    </form>
+    
+    <form id="matchScouting-form11" class="list" ng-show="showIfButtonClicked('postgame')">
+      <h1 id="matchScouting-heading16" style="color:#000000;text-align:center;">Post-Game</h1>
+      <label class="item item-select" id="matchScouting-select153">
+        <span class="input-label">How was their manuverability?</span>
+        <select>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select154">
+        <span class="input-label">How well did they get fuel from the hoppers?</span>
+        <select>
+          <option>Well</option>
+          <option>poorly</option>
+          <option>none</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select155">
+        <span class="input-label">How well did they get fuel from the floor</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>None</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select156">
+        <span class="input-label">How well did they get fuel from the feeder?</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>none</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select157">
+        <span class="input-label">How well did they get gear from the floor</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>None</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select158">
+        <span class="input-label">How well did they get gears from the feeders?</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>None</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select159">
+        <span class="input-label">What was their high goal successfulness?</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>None</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select160">
+        <span class="input-label">What was their low goal successfulness?</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>None</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select161">
+        <span class="input-label">What was their gear successfulness?</span>
+        <select>
+          <option>Well</option>
+          <option>Poorly</option>
+          <option>None</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select162">
+        <span class="input-label">Did they attempt to scale?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select163">
+        <span class="input-label">Did they sucessfully scale?</span>
+        <select></select>
+      </label>
+      <ion-checkbox id="matchScouting-checkbox13">Grabbed rope</ion-checkbox>
+      <ion-checkbox id="matchScouting-checkbox14">partially scaled</ion-checkbox>
+      <ion-checkbox id="matchScouting-checkbox15">scaled but didn't stay aloft</ion-checkbox>
+      <ion-checkbox id="matchScouting-checkbox16">scaled successfully</ion-checkbox>
+      <ion-checkbox id="matchScouting-checkbox17">Other</ion-checkbox>
+      <label class="item item-select" id="matchScouting-select164">
+        <span class="input-label">Is your robot broken?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-input" id="matchScouting-textarea8">
+        <span class="input-label">Notes</span><textarea placeholder=""></textarea></label>
+      <label class="item item-input" id="matchScouting-input31">
+        <span class="input-label">Impact of penalty on match</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-input" id="matchScouting-input32">
+        <span class="input-label">Impact of tech fouls on match</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-select" id="matchScouting-select165">
+        <span class="input-label">How accurately can they shoot?</span>
+        <select>
+          <option>Very well</option>
+          <option>Well</option>
+          <option>Poorly</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select166">
+        <span class="input-label">Did the airship launch?</span>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-input" id="matchScouting-input33">
+        <span class="input-label">How many ranking points did they get?</span>
+        <input type="number" placeholder="">
+      </label>
+      <label class="item item-select" id="matchScouting-select167">
+        <span class="input-label">How well did they score points?</span>
+        <select>
+          <option>Very well</option>
+          <option>Well</option>
+          <option>Poorly</option>
+        </select>
+      </label>
+    </form>
+  </ion-content>
+</ion-view>
